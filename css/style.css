@@ -243,8 +243,8 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	margin-top: 30px;
 	padding: 0;
 }
-#menu-tile, #specials-tile, #map-tile {
-	width: 360px;
+#menu-tile, #specials-tile{
+	width: 100%;
     margin: 0 auto 10px;
 	}
 	
