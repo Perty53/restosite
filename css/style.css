@@ -244,8 +244,21 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	padding: 0;
 }
 #menu-tile, #specials-tile{
-	width: 100%;
+	width: 360px;
     margin: 0 auto 10px;
 	}
 	
+}
+
+/****************** Super X-Small devices only *****************/
+@media (max-width :377px){
+	#menu-tile, #specials-tile{
+	width: 280px;
+	margin: 0 auto 15px;
+	}
+
+	.navbar-brand h1 {
+	padding-top: 0px;
+	font-size: 5.6vw;
+	}
 }
