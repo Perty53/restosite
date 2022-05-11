@@ -152,7 +152,7 @@ box-shadow: 0 1px 5px 1px #cccccc;
 #testimonials{
 	font-style: italic;
 	font-family: Georgia, 'Times New Roman', Times, serif;
-	background-color: rgba(255, 104, 104, 0.2);
+	background-color: rgba(255, 104, 104, 0.1);
 	border: 1px dashed #fff;
 	color: #f6b319;
 }
@@ -237,6 +237,7 @@ box-shadow: 0 1px 5px 1px #cccccc;
 		font-size: 1em;
 		margin-right: 5px;
 	}
+
 	#call-btn >a{
 	background-color: #f6b319;
 	margin:  5px 20px;
@@ -247,21 +248,45 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	font-size: 1.5em;
 	display: block;
 	}
-#xs-deliver{
-	margin-top: 5px;
-	font-size: .7em;
-	letter-spacing: .1em;
-	text-transform: uppercase;
-	}
-.container .jumbotron{
-	margin-top: 30px;
-	padding: 0;
-}
-#menu-tile, #specials-tile{
-	width: 360px;
-    margin: 0 auto 10px;
-	}
+	#xs-deliver{
+		margin-top: 5px;
+		font-size: .7em;
+		letter-spacing: .1em;
+		text-transform: uppercase;
+		}
+	/*END HEADER*/
 	
+	/*HOME*/  
+	.container .jumbotron{
+		margin-top: 30px;
+		padding: 0;
+	}
+	#menu-tile, #specials-tile{
+		width: 360px;
+		margin: 0 auto 10px;
+		}
+	/*END HOME*/	
+
+	/*FOOTER*/
+	.panel-footer section{
+		margin-bottom: 30px;
+		text-align: center;
+	}
+
+	.panel-footer section:nth-child(3){
+		margin-bottom: 0;
+	}
+
+	.panel-footer section hr {
+		width: 50%;
+		margin: auto;
+	}
+
+	#testimonials {
+		width : 94%;
+		margin: auto;
+	}
+	/*END OF FOOTER*/
 }
 
 /****************** Super X-Small devices only *****************/
