@@ -8,14 +8,12 @@ a {
 	text-decoration: none;
 }
 
-
-
+/*HEADER*/
 #header-nav{
 	background-color: #f6b319;
 	border-radius: 0;
 	border: 0;
 }
-
 #logo-img{
 	background: url("../images/restaurant-logo_large.png") no-repeat;
 	width: 150px;
@@ -24,11 +22,9 @@ a {
 	float: left;
 	margin-bottom: 0px;
 }
-
 .navbar-brand{
 	margin-top: 25px;
 }
-
 .navbar-brand h1{/*restorant name*/
 	font-family: 'Lora', sans-serif;
 	color: #557c3e;
@@ -40,7 +36,6 @@ a {
 	margin-bottom: 0px;
 	line-height: .75;
 }
-
 .navbar-brand a, .navbar-brand a:hover, .navbar-brand a:focus{
 	text-decoration: none;
 }
@@ -49,53 +44,45 @@ a {
 	text-transform: uppercase;
 	font-size: 1.5em;
 	margin-top: 15px;
-	margin-bottom: -3px;
-	
+	margin-bottom: -3px	
 }
 .navbar-brand p span{/*star-k*/
 	vertical-align: middle;
 }
-
-
 #nav-list{
 	right: 0px;
 	margin-top: 10px;
 	margin-right: 10px;
 }
-
 #nav-list a{
 	color: #951c49;
 	text-align : center;
 	text-decoration: none;
 }
-
 #nav-list a:hover{
 	background: #e7e7e7;
 }
 #nav-list a span {
 	font-size: 1.5em;
 }
-
 #phone{
 	margin-top: 5px;
 }
-
 #phone a{
 	text-align: right;
 	padding-bottom: 0;
 }
-
 #phone div{
 	color: #557c3e;
 	margin-top: -10px;
 
 }
-
 .navbar-header button.navbar-toggle{
 	border: 1px solid #f6b319;
 	clear: both;
 	margin-top: -35px;
 }
+/*END HEADER*/
 
 /*HOME PAGE*/
 .container .jumbotron{
@@ -104,8 +91,7 @@ a {
 	margin-top : 5px;
 	margin-bottom: 8px;
 }
-
-/*TILES*/
+/*-->TILES*/
 #menu-tile, #specials-tile, #map-tile{
 	height: 250px;
 	width: 100%;
@@ -114,21 +100,17 @@ a {
 	border: 2px solid #3f0c1f;
 	overflow: hidden;
 }
-
 #menu-tile:hover, #specials-tile:hover, #map-tile:hover{
 box-shadow: 0 1px 5px 1px #cccccc;
 }
-
 #menu-tile{
 	background: url("../images/menu-tile.jpg") no-repeat;
 	background-position: center;
 }
-
 #specials-tile{
 	background: url("../images/specials-tile.jpg") no-repeat;
 	background-position: center;
 }
-
 #menu-tile span, #specials-tile span, #map-tile span{
 	position: absolute;
 	right: 0;
@@ -142,6 +124,45 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	opacity: .6;
 
 }
+/*END HOME*/
+
+/*FOOTER*/
+.panel-footer{
+	margin-top: 30px;
+	padding-top: 35px;
+	padding-bottom: 30px;
+	background-color: #222;
+	color: #fff;
+}
+.panel-footer div.row{
+	margin-bottom: 35px;
+}
+#hours, #address{
+	line-height: 2;
+}
+#hours>span, #address >span{
+	font-size: 1.2em;
+	
+}
+#address p{
+	color: #557c3e;
+	font-size: .8em;
+	line-height: 1.8em;
+}
+#testimonials{
+	font-style: italic;
+	font-family: Georgia, 'Times New Roman', Times, serif;
+	background-color: rgba(255, 104, 104, 0.2);
+	border: 1px dashed #fff;
+	color: #f6b319;
+}
+#testimonials p:nth-child(2){
+	margin-top: 25px;
+}
+/*END FOOTER*/
+
+
+/*MEDIA QUERIES*/
 /****************** Large devices only *****************/
 @media (min-width: 992px){
 	.container .jumbotron{
@@ -197,12 +218,10 @@ box-shadow: 0 1px 5px 1px #cccccc;
 		padding-top: 10px;
 		height: 80px;
 	}
-
 	.navbar-brand h1{
 		padding-top: 10px;
 		font-size: 5vw;
 	}
-
 	.navbar-brand p{
 		font-size: .6em;
 		margin-top: 12px;
@@ -211,16 +230,13 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	.navbar-brand p img {
 		height: 15px;
 	}
-
 	#navbarSupportedContent a{
 		font-size: 1.2em;
 	}
-
 	#navbarSupportedContent a span{
 		font-size: 1em;
 		margin-right: 5px;
 	}
-
 	#call-btn >a{
 	background-color: #f6b319;
 	margin:  5px 20px;
@@ -231,14 +247,12 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	font-size: 1.5em;
 	display: block;
 	}
-
 #xs-deliver{
 	margin-top: 5px;
 	font-size: .7em;
 	letter-spacing: .1em;
 	text-transform: uppercase;
 	}
-
 .container .jumbotron{
 	margin-top: 30px;
 	padding: 0;
@@ -256,7 +270,6 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	width: 280px;
 	margin: 0 auto 15px;
 	}
-
 	.navbar-brand h1 {
 	padding-top: 0px;
 	font-size: 5.6vw;
