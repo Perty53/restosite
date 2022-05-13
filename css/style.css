@@ -126,6 +126,35 @@ box-shadow: 0 1px 5px 1px #cccccc;
 }
 /*END HOME*/
 
+/*MENU CATEGORIES PAGE*/
+.category-tile{
+	position: relative;
+	border: 2px solid #3f0c1f;
+	overflow: hidden;
+	width: 200px;
+	height: 200px;
+	margin: 0 auto 15px;
+	
+}
+.category-tile span{
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	text-align: center;
+	font-size: 1.2em;
+	text-transform: uppercase;
+	color: #fff;
+	background-color: #000;
+	opacity: .8;
+}
+.category-tile:hover{
+	box-shadow: 0 1px 5px 1px #ccc;
+}
+#menu-categories-title+div{
+	margin-bottom: 50px;
+}
+/*END MENU CATEGORIES PAGE*/
 /*FOOTER*/
 .panel-footer{
 	margin-top: 30px;
@@ -267,6 +296,11 @@ box-shadow: 0 1px 5px 1px #cccccc;
 		}
 	/*END HOME*/	
 
+	/*CATEGORY PAGE*/
+	.col-xs-12{
+		width: 100%;
+	}
+	/*END CATEGORY PAGE*/
 	/*FOOTER*/
 	.panel-footer section{
 		margin-bottom: 30px;
@@ -286,11 +320,12 @@ box-shadow: 0 1px 5px 1px #cccccc;
 		width : 94%;
 		margin: auto;
 	}
-	/*END OF FOOTER*/
+	/*END FOOTER*/
 }
 
 /****************** Super X-Small devices only *****************/
 @media (max-width :377px){
+	/*HEADER*/
 	#menu-tile, #specials-tile{
 	width: 280px;
 	margin: 0 auto 15px;
@@ -299,4 +334,6 @@ box-shadow: 0 1px 5px 1px #cccccc;
 	padding-top: 0px;
 	font-size: 5.6vw;
 	}
+	/*END HEADER*/
+
 }
