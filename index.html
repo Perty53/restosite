@@ -5,9 +5,10 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>David Chu's China Bistro</title>
-	<link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
+	<link rel="stylesheet" href="https//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css">
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="css/form.css">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Oxygen&display=swap" rel="stylesheet">
@@ -18,6 +19,7 @@
 	<script src="js/bootstrap.min.js"></script>
 	<script src="js/ajaxUtils.js"></script>
 	<script src="js/script.js"></script>
+	<script src="js/form.js"></script>
 
 
 </head>
@@ -41,7 +43,7 @@
 
 			<button 
 			id="navbarToggle"
-			class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarSupportedContent"> 
+			class="navbar-toggler collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" aria-controls="navbarSupportedContent"> 
 				<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
 					<path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z" color="#61122f"/>
 				</svg>
@@ -49,19 +51,23 @@
 
 			<div id="navbarSupportedContent" class="collapse navbar-collapse justify-content-end">
 				<ul id="nav-list" class="navbar-nav">
-					<li class="nav-item d-sm-block d-md-none active">
-						<a href="index.html" class="nav-link active">
+					<li id="navHomeButton" class="nav-item d-sm-block d-md-none active">
+						<a href="index.html" class="nav-link">
 							<span class="glyphicon glyphicon-home"></span><br class="d-none d-md-block"> Home</a>
 					</li>
-					<li class="nav-item">
-						<a href="menu-categories.html" class="nav-link">
+					<li id="navSignButton" class="nav-item">
+						<a href="#"  class="nav-link">
+							<span class=""></span><br class="d-none d-md-block"> Sign in</a>
+					</li>
+					<li id="navMenuButton" class="nav-item">
+						<a href="#" onclick="$dc.loadMenuCategories();" class="nav-link">
 							<span class="glyphicon glyphicon-cutlery"></span><br class="d-none d-md-block"> Menu</a>
 					</li>
-					<li class="nav-item">
-						<a href="https://www.aka.ms/yourpc" class="nav-link">
+					<li id="navAboutButton" class="nav-item">
+						<a href="#" class="nav-link">
 							<span class="glyphicon glyphicon-info-sign"></span><br class="d-none d-md-block"> About</a>
 					</li>
-					<li class="nav-item">
+					<li id="navAwardsButton" class="nav-item">
 						<a href="#" class="nav-link">
 							<span class="glyphicon glyphicon-certificate"></span><br class="d-none d-md-block"> Awards</a>
 					</li>
@@ -76,13 +82,20 @@
 </header>
 
 <div id="call-btn" class="d-block d-sm-none text-center">
-	<a class="link-btn" href="+410-602-5008">
+	<a class="link-btn glyphicon glyphicon-info-sign" href="+410-602-5008">
 		<span class="glyphicon glyphicon-earphone"></span>
 	410-602-5008</a>
 </div>
 <div id="xs-deliver" class="text-center d-block d-sm-none">* We deliver</div>
 
 <div class="container" id="main-content"></div><!--END OF #main-content-->
+
+<!--<input type="text/submit/hidden/button/image" name="" id="hh" value="" />-->
+
+<!--Go to up Button-->
+<a href="#">
+<div id="goUp"></div>
+</a>
 
 <footer class="panel-footer">
 	<div class="container">
