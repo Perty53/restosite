@@ -1,0 +1,135 @@
+form{
+    border: 1px dashed #fff;
+    border-radius: 7px;
+    padding: 13px;
+    padding-bottom: 50px;
+    margin-top: 30px;
+    position: relative;
+}
+.c-input{
+  position: relative;
+}
+.legend{
+  position: absolute;
+  left: 15px;
+  top: -3px;
+    color: #fff;
+    padding: 10px;
+    font-family: 'Charis SIL', serif;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 1.3px;
+    transition: all 0.3s ease;
+}
+.legend2{
+  padding-left: 5px;
+  padding-right: 5px;
+  position : absolute ;
+  top: -11px;
+  left: 18px;
+  font-family: 'Charis SIL', serif;
+  font-size: 14px;
+  background-color: rgb(97,18,47);
+  transition: all 0.3s ease ;
+}
+.input-form{
+    position: relative;
+    width:100%;
+    margin: auto ;
+    height: 2.7em;
+    border-bottom: 2px solid rgba(255,255,255, .5);
+    background-color: rgba(255,255,255, .35);
+    border-radius: 7px;
+    margin-bottom: 14px;
+    color:white;
+    padding: 10px;
+    font-family: 'Charis SIL', serif;
+}
+.input-form:focus{
+  color: inherit;
+    box-shadow: 2px 2px 1px 1px   rgba(246,179,25,0.49);
+    border: 2px solid #f6b319;
+    outline: none;
+    opacity: 1;
+    background-color: #61122f;
+    
+}
+.box-form-input2{
+    display: block;
+    width: 100%;
+    height: 1.9em;
+    background-color: rgba(75, 100, 230, .1);
+    border: 1px solid rgba(75, 100, 230, .7);
+    border-radius: 7px;
+    margin: 5px;
+    padding: 4px;
+    padding-top: 0px;
+    text-align: center;
+    font-family: 'Charis SIL', serif;
+    font-size: 1em;
+    line-height: 2em;
+    letter-spacing: 1.3px;
+    
+}
+.box-form-input2:focus{
+    box-shadow: 2px 2px 1px 1px rgba(75, 100, 230, .6);
+    outline: none;
+    opacity: 1;
+}
+input[type="radio"]{
+    position: absolute;
+    left: 10px;
+    top: 5px;
+}
+#radio-btn {
+    display: block;
+}
+#radio-btn .box-form-input2{
+    position: relative;
+}
+#radio-btn .box-form-input2 label{
+    width: 100%;
+    line-height: 15px;
+    position: absolute;
+    left: -4px;
+    top: 3px;
+    
+}
+.font-for-label{
+    margin: 4px;
+    font-size: 104%;
+}
+input[type="checkbox"]{
+    
+}
+#accept-label{
+    display: inline;
+    font-family: 'Charis SIL', serif;
+}
+#content-sub-btn{
+    position: relative;
+    margin: 10px;
+}
+
+#createAcc{
+    position: absolute;
+    bottom: 9px;
+}
+
+#submit{ 
+  position: absolute;
+    bottom: 9px;
+    right: 12px;
+    width: 32%;
+    background-color:  #f6b319;
+    border-radius: 8px;
+}
+#submit[value]{
+    color: #fff;
+    font-size: 1.3em;
+    padding: 0;
+    margin: -2px;
+    width: 100;
+    font-family: 'Charis SIL', serif;
+    text-align: center;
+}

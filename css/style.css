@@ -1,7 +1,7 @@
 body{
 	font-size: 16px;
-	color: #f324ff;
-	background-color: #61122f;
+	color: #fff;
+	background-color: rgb(97,18,47);
 	font-family: Oxygen, sans-serif;
 }
 a {
@@ -9,6 +9,14 @@ a {
 }
 
 /*HEADER*/
+header{
+  position : sticky;
+  z-index: 99;
+  top : 0;
+  border-bottom: 1px solid #fff;
+  box-shadow: 0 2px 8px #000;
+}
+
 #header-nav{
 	background-color: #f6b319;
 	border-radius: 0;
@@ -28,7 +36,7 @@ a {
 .navbar-brand h1{/*restorant name*/
 	font-family: 'Lora', sans-serif;
 	color: #557c3e;
-	font-size: 2.5em;
+	font-size: 2.em;
 	text-transform: uppercase;
 	font-weight: bold;
 	text-shadow: 1px 1px 1px #222;
@@ -53,17 +61,25 @@ a {
 	right: 0px;
 	margin-top: 10px;
 	margin-right: 10px;
+	margin-top: 80px;
 }
 #nav-list a{
 	color: #951c49;
 	text-align : center;
 	text-decoration: none;
+	
+	
+
 }
 #nav-list a:hover{
 	background: #e7e7e7;
 }
 #nav-list a span {
 	font-size: 1.5em;
+}
+
+#navbarSupportedContent ul li{
+	font-size: .9em;
 }
 #phone{
 	margin-top: 5px;
@@ -161,6 +177,10 @@ box-shadow: 0 1px 5px 1px #cccccc;
 /*END MENU CATEGORIES PAGE*/
 
 /*SINGLE CATEGORY PAGE*/
+.special-instructions{
+  margin-bottom: 5px;
+  
+}
 .menu-item-tile{
 	margin-bottom: 25px;
 }
@@ -205,7 +225,22 @@ h3.menu-item-title{
 	font-size: .9em;
 	font-style: italic;
 }
+
 /*END SINGLE CATEGORY PAGE*/
+
+#goUp{
+  background: url('../images/goUp.png') no-repeat;
+  background-position: center;
+  width: 58px;
+  margin: auto;
+  height: 58px;
+  border-radius: 30px;
+  position : fixed;
+  bottom: 10px;
+  right: 15px;
+  display: none;
+  
+}
 /*FOOTER*/
 .panel-footer{
 	margin-top: 30px;
@@ -249,6 +284,8 @@ h3.menu-item-title{
 		background: url('../images/jumbotron_1200.jpg') no-repeat;
 		height: 675px;
 	}
+	
+
 }
 
 /****************** Medium devices only *****************/
@@ -259,15 +296,32 @@ h3.menu-item-title{
 		width: 100px;
 		height: 100px;
 	} 
+	
 
 	.navbar-brand h1{
-		font-size: 1.6em;
+		font-size: 1.3em;
 		margin-bottom: -12px;
+	}
+
+	.navbar-brand p{
+		font-size: .9em;
 	}
 
 	.navbar-brand p span{
 		font-size: 1em;
 		vertical-align: middle;
+	}
+
+	#navbarSupportedContent ul li a.nav-link{
+		font-size: 1.em;
+	}
+
+	#phone a span{
+		font-size: .9em;
+	}
+
+	#phone a div{
+		font-size: .9em;
 	}
 
 	/*End Header*/
@@ -281,18 +335,25 @@ h3.menu-item-title{
 }
 
 /****************** Small devices only *****************/
-@media (min-width: 576px) and (max-width: 767px){
+@media (min-width: 577px) and (max-width: 767px){
 	/*Home Page*/
 	.container .jumbotron{
 		background: url("../images/jumbotron_768.jpg") no-repeat;
 		height: 432px;
 		
 	}
+	.navbar-brand h1{
+		font-size: 1.5em;
+	}
+
+	.navbar-brand p span{
+		font-size: .6em;
+	}
 	/*End Home Page*/
 }
 
 /****************** X-Small devices only *****************/
-@media (max-width: 575px){
+@media (max-width: 576px){
 	/*Header*/
 	.navbar-brand{
 		padding-top: 10px;
@@ -317,6 +378,10 @@ h3.menu-item-title{
 		font-size: 1em;
 		margin-right: 5px;
 	}
+	
+/*	#call-btn{
+	  position: absolute;
+	}*/
 
 	#call-btn >a{
 	background-color: #f6b319;
@@ -400,6 +465,7 @@ h3.menu-item-title{
 	padding-top: 0px;
 	font-size: 5.6vw;
 	}
+
 	/*END HEADER*/
 
 
