@@ -17,7 +17,7 @@ function setHeaderHeight(){
   
 ((main) => {
   const dc = {};
-  var home = "snippets/signin.html",
+  var home = "snippets/home.html",
   allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json",
   categoriesTitle = "snippets/categories_title.html",
   categoriesHtml = "snippets/categories.html",
