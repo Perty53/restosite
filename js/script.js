@@ -15,7 +15,7 @@ function setHeaderHeight(){
      callBoutton.style.marginTop += headerHeight +"px";
   }
   
-((main) => {
+((mafin) => {
   const dc = {};
   var home = "snippets/home.html",
   allCategoriesUrl = "https://davids-restaurant.herokuapp.com/categories.json",
